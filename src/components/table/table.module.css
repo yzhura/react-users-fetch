@@ -1,0 +1,85 @@
+
+.tableResponsive {
+    overflow-x: auto;
+}
+
+.table {
+    text-align: center;
+    margin: 0 auto;
+    border-spacing: 0;
+    border: 1px solid #ececec;
+    overflow: auto;
+}
+
+.table th {
+    padding: 10px 15px;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 400;
+    color: #fff;
+    background-color: #343a40;
+    border-color: #454d55;
+    font-size: 19px;
+    cursor: pointer;
+    transition: opacity .3s ease-out;
+}
+
+.table th:hover {
+    opacity: .8;
+}
+
+.table tbody tr {
+    cursor: pointer;
+    transition: background-color .3s ease-out;
+}
+
+.table thead span {
+    position: relative;
+}
+
+.table thead span:after {
+    content: '';
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -25px;
+    border: 7px solid transparent; 
+    border-bottom: 7px solid #fff;
+    border-top: 0;
+    transition: transform .3s ease-out, opacity .3s ease-out, visibility .3s ease-out;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0,0,0,.025);
+}
+
+.table tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+.table tbody tr:nth-of-type(odd):hover {
+    background-color: rgba(0,0,0, .075);
+}
+
+.table td {
+    padding: 25px 20px;
+    border-bottom: 1px solid #ececec;
+}
+
+.active-down-name .name:after,
+.active-down-username .username:after,
+.active-down-email .email:after,
+.active-down-website .website:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.active-name .name:after,
+.active-username .username:after,
+.active-email .email:after,
+.active-website .website:after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) rotate(180deg);
+}
