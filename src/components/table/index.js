@@ -27,7 +27,7 @@ const UsersTable = () => {
         return <h1>Loading...</h1>
     }
 
-    const userInfo = localData.map((user) => {
+    const trElements = localData.map((user) => {
         const {name, username, email, website, id} = user;
         return (
             <tr key={id} onClick={() => openModalInfo(user)}>
@@ -58,7 +58,7 @@ const UsersTable = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {userInfo}
+                    {trElements}
                 </tbody>
             </table>
         </div>

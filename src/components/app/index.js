@@ -15,7 +15,6 @@ const App = () => {
 
     let name, website, address, company, phone;
 
-    console.log('activeUser: ', activeUser);
     if(activeUser) {
         name = activeUser.name;
         phone = activeUser.phone;
